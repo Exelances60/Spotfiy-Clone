@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import RightCartİndex from "../RightCartİndex/RightCartİndex";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchRandomData } from "../../store/user/user.action";
+import { fetchRandomData } from "../../store/user/user.reducer";
 import { selectRandomPlaylist } from "../../store/user/user.selector";
 import Spinner from "../spinner/spinner.componet";
 import RightCart from "../RightCart/RightCart";

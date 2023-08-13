@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { selectClickData } from "../../store/user/user.selector";
 import Spinner from "../spinner/spinner.componet"; // Update the import statement
 import NOTRACK from "../../assets/Screenshot_5.png";
-import { setAudio } from "../../store/user/user.action";
+import { setAudio } from "../../store/user/user.reducer";
 
 const HomePageRightTracks = () => {
   const dispatch = useDispatch();

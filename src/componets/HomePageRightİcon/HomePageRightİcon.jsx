@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { selectCurrentUser } from "../../store/user/user.selector";
-import { setCurrentClickPlaylist } from "../../store/user/user.action";
+import { setCurrentClickPlaylist } from "../../store/user/user.reducer";
 
 const HomePageRightİcon = () => {
   const dispatch = useDispatch();

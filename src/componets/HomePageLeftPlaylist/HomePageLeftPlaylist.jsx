@@ -14,8 +14,8 @@ const HomePageLeftPlaylist = () => {
   const currentUserData = useSelector(selectCurrentUser);
   const { public_playlists } = currentUserData;
 
-  if (!public_playlists) {
-    // Eğer public_playlists tanımsız ise, Spinner veya uygun bir yükleme mesajı gösterebilirsiniz
+  if (!currentUserData || !currentUserData.public_playlists) {
+    // Veriler yüklenmediyse veya tanımsızsa, uygun bir mesaj veya yükleme gösterebilirsiniz.
     return <Spinner />;
   }
 

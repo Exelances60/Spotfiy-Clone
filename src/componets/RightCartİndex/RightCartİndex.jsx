@@ -5,7 +5,7 @@ import Spinner from "../spinner/spinner.componet";
 import {
   fetchClickData,
   setCurrentClickPlaylist,
-} from "../../store/user/user.action";
+} from "../../store/user/user.reducer";
 
 const RightCartİndex = () => {
   const dispatch = useDispatch();

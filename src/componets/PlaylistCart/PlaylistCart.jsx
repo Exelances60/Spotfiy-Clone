@@ -4,7 +4,7 @@ import { selectCurrentUser } from "../../store/user/user.selector";
 import {
   fetchClickData,
   setCurrentClickPlaylist,
-} from "../../store/user/user.action";
+} from "../../store/user/user.reducer";
 
 const PlaylistCart = ({ val, imageUrl }) => {
   const currentUserData = useSelector(selectCurrentUser);

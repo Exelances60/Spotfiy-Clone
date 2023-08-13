@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import {
   fetchClickData,
   setCurrentClickPlaylist,
-} from "../../store/user/user.action";
+} from "../../store/user/user.reducer";
 
 const RightCart = ({ playlistItems }) => {
   const dispatch = useDispatch();
