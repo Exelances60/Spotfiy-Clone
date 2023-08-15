@@ -1,9 +1,9 @@
 import React from "react";
 import { GiBookshelf } from "react-icons/gi";
 import { useSelector } from "react-redux";
-import { selectCurrentUser } from "../../store/user/user.selector";
-import Spinner from "../spinner/spinner.componet"; // Update the import statement
-import PlaylistCart from "../PlaylistCart/PlaylistCart";
+import { selectCurrentUser } from "../../../../store/user/user.selector";
+import Spinner from "../../../spinner/spinner.componet"; // Update the import statement
+import PlaylistCart from "../../../PlaylistCart/PlaylistCart";
 
 const getImageUrl = (uri) => {
   const identifier = uri.split(":").pop();

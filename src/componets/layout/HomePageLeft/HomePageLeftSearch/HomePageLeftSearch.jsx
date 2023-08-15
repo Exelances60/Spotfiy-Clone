@@ -2,7 +2,7 @@ import React from "react";
 import { AiFillHome } from "react-icons/ai";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { useDispatch } from "react-redux";
-import { setCurrentClickPlaylist } from "../../store/user/user.reducer";
+import { setCurrentClickPlaylist } from "../../../../store/user/user.reducer";
 
 const HomePageLeftSearch = () => {
   const dispatch = useDispatch();

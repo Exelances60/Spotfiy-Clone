@@ -8,6 +8,7 @@ const INITIAL_STATE = {
   currentClickPlaylist: {},
   audio: "",
   randomPlaylist: {},
+  activeUserProfile: false,
 };
 
 export const fetchData = createAsyncThunk("fetchData/Login", async (login) => {
@@ -88,6 +89,9 @@ export const userSlice = createSlice({
     setRandomPlaylist: (state, action) => {
       state.randomPlaylist = action.payload;
     },
+    setActiveUserProfile: (state, action) => {
+      state.activeUserProfile = action.payload;
+    },
   },
   extraReducers(builder) {
     builder
@@ -110,6 +114,7 @@ export const {
   setCurrentClickPlaylist,
   setAudio,
   setRandomPlaylist,
+  setActiveUserProfile,
 } = userSlice.actions;
 
 export const userReducer = userSlice.reducer;

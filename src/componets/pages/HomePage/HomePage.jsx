@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from "react";
-import HomePageLeft from "../HomePageLeft/HomePageLeft";
-import HomePageRight from "../HomePageRight/HomePageRight";
+import HomePageLeft from "../../layout/HomePageLeft/HomePageLeft";
+import HomePageRight from "../../layout/HomePageRight/HomePageRight";
 import { useSelector } from "react-redux";
-import { selectAudio } from "../../store/user/user.selector";
+import { selectAudio } from "../../../store/user/user.selector";
 import ReactAudioPlayer from "react-audio-player";
 
 const HomePage = () => {

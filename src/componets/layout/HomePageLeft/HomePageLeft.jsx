@@ -1,6 +1,6 @@
 import React from "react";
-import HomePageLeftSearch from "../HomePageLeftSearch/HomePageLeftSearch";
-import HomePageLeftPlaylist from "../HomePageLeftPlaylist/HomePageLeftPlaylist";
+import HomePageLeftSearch from "./HomePageLeftSearch/HomePageLeftSearch";
+import HomePageLeftPlaylist from "./HomePageLeftPlaylist/HomePageLeftPlaylist";
 
 const HomePageLeft = () => {
   return (

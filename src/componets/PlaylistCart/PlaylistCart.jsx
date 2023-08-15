@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { selectCurrentUser } from "../../store/user/user.selector";
 import {
   fetchClickData,
+  setActiveUserProfile,
   setCurrentClickPlaylist,
 } from "../../store/user/user.reducer";
 
@@ -14,10 +15,11 @@ const PlaylistCart = ({ val, imageUrl }) => {
   return (
     <>
       <div
-        className="w-full h-[10%] flex  items-center mb-5 hover:bg-[#1a1a1a] ease-in duration-300 cursor-pointer"
+        className="w-full h-[10%] flex mb-5 hover:bg-[#1a1a1a] ease-in duration-300 cursor-pointer"
         key={val.id}
         onClick={() => {
           dispatch(setCurrentClickPlaylist(val));
+          dispatch(setActiveUserProfile(false));
           dispatch(fetchClickData(val.uri.replace("spotify:playlist:", "")));
         }}
       >

@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchData, setUserLogin } from "../../store/user/user.reducer";
-import { selectUserLogin } from "../../store/user/user.selector";
+import { fetchData, setUserLogin } from "../../../store/user/user.reducer";
+import { selectUserLogin } from "../../../store/user/user.selector";
 
 const Login = () => {
   const dispatch = useDispatch();

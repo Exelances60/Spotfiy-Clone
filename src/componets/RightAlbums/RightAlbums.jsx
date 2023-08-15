@@ -28,11 +28,11 @@ const RightAlbums = ({ albums }) => {
                   clickAlbums(data.uri);
                 }}
               >
-                <div className="w-[90%] h-[70%] m-auto mt-2">
+                <div className="w-[90%] h-[70%] xl:w-[75%]  m-auto mt-2">
                   <img
                     src={sources[0].url}
                     alt=""
-                    className="w-full h-full object-cover rounded-lg"
+                    className="w-full h-full object-cover  rounded-lg"
                   ></img>
                 </div>
                 <div className="w-full h-[10%]  flex box-border pl-3 text-sm overflow-hidden m-auto mt-1">

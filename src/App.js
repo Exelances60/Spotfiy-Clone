@@ -1,8 +1,8 @@
 import "./App.css";
-import Login from "./componets/LogIn/Login";
+import Login from "./componets/pages/LogIn/Login";
 import { useSelector } from "react-redux";
 import { selectUserLogin } from "./store/user/user.selector";
-import HomePage from "./componets/HomePage/HomePage";
+import HomePage from "./componets/pages/HomePage/HomePage";
 
 function App() {
   const userLogin = useSelector(selectUserLogin);
